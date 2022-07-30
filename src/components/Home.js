@@ -16,7 +16,6 @@ function Home(){
         <div className="section2"></div>
         <Gallery images={data[2].images} details={data[2].info} classes=''/>
         <Display images={['./images/men.jpg','./images/kids.jpg']} name='men, boys & girls' classes='coloured'/>
-        <Footer />
         </>
     );
 }

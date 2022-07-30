@@ -1,0 +1,12 @@
+.products-list{
+    display: grid;
+    margin:100px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.product{
+    width: 550px;
+}
+.product>img{
+    width: 500px;
+}
