@@ -1,0 +1,93 @@
+.section1{
+    background-image: url('./background1.jpg');
+    background-position: center;
+    height: 800px;
+    background-size: 100%;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-top: 550px;
+}
+.section1>p:first-child{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.grid-gallery{
+    padding: 100px 400px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 500px 250px;
+    margin: 100px 0 0;
+}
+
+.image1{
+    width: 450px;
+    grid-row: 1/3;
+    background-color: #CFD2CF;
+    justify-self:start;
+    align-self: start;
+}
+.image1>img{
+    width: 450px;
+    height: 600px;
+    position: relative;
+    left: 50px;
+    top:50px;
+}
+
+.image2{
+    width: 450px;
+    grid-row: 2/4;
+    background-color: #361500;
+    justify-self:end;
+    align-self: start;
+}
+.image2>img{
+    width: 450px;
+    height: 600px;
+    position: relative;
+    right: 50px;
+    top:50px;
+}
+.detail1,.detail2{
+    height: 120px;
+    padding-left: 50px;
+    align-self: start;
+}
+.detail1{
+    border-left: 5px solid #361500;
+}
+.detail2{
+    border-right: 5px solid #CFD2CF;
+}
+.grid-gallery p{
+    font-size: 1.2rem;
+    font-weight:300;
+}
+.display{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 100px 0;
+}
+.display p{
+    margin-bottom: 50px;
+}
+.costume-images{
+    display: flex;
+}
+.costume-images>img{
+    width: 600px;
+    margin: 0 auto;
+}
+.coloured{
+    background-color: #E4D1B9;
+}
+.section2{
+    background-image: url('./happy-people.jpg');
+    height: 800px;
+    background-size: 100%;
+    background-position:bottom;
+}
