@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Tanishka-2000/shopping-cart/static/css/main.2f42f65b.css",
+    "main.js": "/Tanishka-2000/shopping-cart/static/js/main.48eda04f.js",
+    "static/media/happy-people.jpg": "/Tanishka-2000/shopping-cart/static/media/happy-people.98da37b632afdd5c2070.jpg",
+    "static/media/background1.jpg": "/Tanishka-2000/shopping-cart/static/media/background1.86ade6ffdee82f5c6883.jpg",
+    "index.html": "/Tanishka-2000/shopping-cart/index.html",
+    "main.2f42f65b.css.map": "/Tanishka-2000/shopping-cart/static/css/main.2f42f65b.css.map",
+    "main.48eda04f.js.map": "/Tanishka-2000/shopping-cart/static/js/main.48eda04f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f42f65b.css",
+    "static/js/main.48eda04f.js"
+  ]
+}
