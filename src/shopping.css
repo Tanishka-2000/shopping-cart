@@ -19,7 +19,7 @@
 .image>img{
     width: 100%;
 }
-.product button{
+ button{
     width: 100%;
     border: 1px solid white;
     background-color: #603601;
@@ -35,4 +35,35 @@
 .product input{
     font-size: 1.5rem;
     border: none;
+}
+.cart-icon{
+    text-align: right;
+    margin: 20px 100px 0 0;
+    color: #603601;
+}
+.shopping>h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #603601;
+}
+.material-symbols-outlined{
+    font-size: 3rem;
+}
+.cart-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.cart-image{
+    width: 500px;
+}
+.data{
+    font-size: 2rem;
+    padding: 100px 50px 0 0;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

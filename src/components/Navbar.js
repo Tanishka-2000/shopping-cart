@@ -7,8 +7,6 @@ function Navbar(){
             <div className='nav-links'>
                 <Link to='/'>Home</Link>
                 <Link to ='shopping'>Shopping</Link>
-                <Link to ='/'>Contact</Link>
-                <Link to = 'shopping'><span className="material-symbols-outlined">shopping_cart</span></Link>
             </div>
         </nav>
     )

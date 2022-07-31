@@ -5,12 +5,13 @@ import Shopping from './components/Shopping';
 import Footer from './components/Footer';
 
 function App() {
+
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="shopping" element={<Shopping />} />
+        <Route path="shopping" element={<Shopping showCart={false}/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

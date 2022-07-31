@@ -1,5 +1,6 @@
 .section1{
     background-image: url('./background1.jpg');
+    background-attachment: fixed;
     background-position: center;
     height: 800px;
     background-size: 100%;
@@ -87,6 +88,7 @@
 }
 .section2{
     background-image: url('./happy-people.jpg');
+    background-attachment: fixed;
     height: 800px;
     background-size: 100%;
     background-position:bottom;
