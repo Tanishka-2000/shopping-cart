@@ -2,11 +2,37 @@
     display: grid;
     margin:100px;
     grid-template-columns: 1fr 1fr 1fr;
-
+    grid-row-gap: 60px;
 }
 .product{
-    width: 550px;
-}
-.product>img{
     width: 500px;
+    font-size: 1.5rem;
+}
+.product>.image{
+    width: 500px;
+    height: 600px;
+}
+.product-name{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.image>img{
+    width: 100%;
+}
+.product button{
+    width: 100%;
+    border: 1px solid white;
+    background-color: #603601;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.btn-group{
+    display: flex;
+}
+.product input{
+    font-size: 1.5rem;
+    border: none;
 }
