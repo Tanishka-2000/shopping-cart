@@ -4,7 +4,7 @@ import products from './productsData';
 import Product from './Product';
 import '../shopping.css';
 
-function Shopping(props){
+function Shopping(){
     const [cart, setCart] = useState([]);
     const [showCart, setShowCart] = useState(false);
     const addToCart = (item) => {
@@ -17,7 +17,11 @@ function Shopping(props){
     else {
         return(
             <div className='shopping'>
-                <div className='cart-icon' onClick={switchCart}><span className="material-symbols-outlined">shopping_cart</span></div>
+
+                <div className='cart-icon' onClick={switchCart}>
+                    <div className='cart-number'>{cart.length}</div>
+                    <span className="material-symbols-outlined">shopping_cart</span>
+                </div>
                 <h1> Choose your Style</h1>
                 <div className='products-list'>
                 {products.map(product => <Product  key={product.id} info={product} addToCart={addToCart} />)}

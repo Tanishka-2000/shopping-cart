@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="shopping" element={<Shopping showCart={false}/>} />
+        <Route path="shopping" element={<Shopping />} />
       </Routes>
       <Footer />
     </BrowserRouter>

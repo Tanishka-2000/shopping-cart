@@ -1,6 +1,5 @@
 import Gallery from './Gallery';
 import Display from './Display';
-import Footer from './Footer';
 import data from './data';
 import '../home.css';
 function Home(){

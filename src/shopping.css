@@ -67,3 +67,7 @@
     flex-direction: column;
     justify-content: center;
 }
+.cart-number{
+    font-size: 1.5rem;
+    color: #603601;
+}

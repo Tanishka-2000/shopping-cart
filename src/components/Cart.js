@@ -16,6 +16,7 @@ function Cart(props){
                         <p>Product: {product.item.name}</p>
                         <p>Price: {product.item.price}</p>
                         <p>Quantity: {product.quantity}</p>
+                        <p>Total Amount: {product.item.price * product.quantity}</p>
                     </div>
                     <div className='btns'>
                         <button onClick={order} data-id={product.item.id}>Proceed to pay</button>
