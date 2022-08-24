@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Tanishka-2000/shopping-cart/static/css/main.c3e83c56.css",
-    "main.js": "/Tanishka-2000/shopping-cart/static/js/main.a1779436.js",
-    "static/media/happy-people.jpg": "/Tanishka-2000/shopping-cart/static/media/happy-people.98da37b632afdd5c2070.jpg",
-    "static/media/background1.jpg": "/Tanishka-2000/shopping-cart/static/media/background1.86ade6ffdee82f5c6883.jpg",
-    "index.html": "/Tanishka-2000/shopping-cart/index.html",
-    "main.c3e83c56.css.map": "/Tanishka-2000/shopping-cart/static/css/main.c3e83c56.css.map",
-    "main.a1779436.js.map": "/Tanishka-2000/shopping-cart/static/js/main.a1779436.js.map"
+    "main.css": "/shopping-cart/static/css/main.5e411aad.css",
+    "main.js": "/shopping-cart/static/js/main.a1779436.js",
+    "static/media/happy-people.jpg": "/shopping-cart/static/media/happy-people.98da37b632afdd5c2070.jpg",
+    "static/media/background1.jpg": "/shopping-cart/static/media/background1.86ade6ffdee82f5c6883.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "main.5e411aad.css.map": "/shopping-cart/static/css/main.5e411aad.css.map",
+    "main.a1779436.js.map": "/shopping-cart/static/js/main.a1779436.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3e83c56.css",
+    "static/css/main.5e411aad.css",
     "static/js/main.a1779436.js"
   ]
 }
