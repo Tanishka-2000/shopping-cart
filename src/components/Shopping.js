@@ -12,8 +12,12 @@ function Shopping(){
         console.log(cart);
     };
     const switchCart = () => setShowCart(showCart => !showCart);
+    const removeProduct = (id) => {
+        let newCart = cart.filter(product => product.item.id !== id);
+        setCart(newCart);
+    }
 
-    if(showCart) return <Cart list={cart} switchCart={switchCart}/>
+    if(showCart) return <Cart list={cart} switchCart={switchCart} removeProduct={removeProduct}/>
     else {
         return(
             <div className='shopping'>
@@ -22,7 +26,7 @@ function Shopping(){
                     <div className='cart-number'>{cart.length}</div>
                     <span className="material-symbols-outlined">shopping_cart</span>
                 </div>
-                <h1> Choose your Style</h1>
+                <h1>Choose your Style</h1>
                 <div className='products-list'>
                 {products.map(product => <Product  key={product.id} info={product} addToCart={addToCart} />)}
                 </div>
