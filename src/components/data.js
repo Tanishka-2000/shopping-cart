@@ -1,6 +1,6 @@
 const data = [
     {   styleType: 1,
-        images: ['./images/image1.jpg', './images/image2.jpg'],
+        images: ['./shopping-cart/images/image1.jpg', './shopping-cart/images/image2.jpg'],
         info: [
             {
             title:'',
@@ -13,7 +13,7 @@ const data = [
         ],
     },
     {   styleType: 2,
-        images: ['./images/image3.jpg', './images/image4.jpg'],
+        images: ['./shopping-cart/images/image3.jpg', './shopping-cart/images/image4.jpg'],
         info: [
             {
             title:'winter is coming and we don’t want to look unprepared',
@@ -26,7 +26,7 @@ const data = [
         ],
     },
     {   styleType: 1,
-        images: ['./images/bag.jpg', './images/shoes.jpg'],
+        images: ['./shopping-cart/images/bag.jpg', './shopping-cart/images/shoes.jpg'],
         info: [
             {
             title:'shoes',

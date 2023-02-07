@@ -8,10 +8,10 @@ body {
 }
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #603601;
-    padding: 20px;
+    padding: 20px 150px;
 }
 .nav-logo {
   font-family: 'Square Peg', cursive;
