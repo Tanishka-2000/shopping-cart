@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Gallery from './components/Gallery';
+import Gallery from '../components/Gallery';
 
 it('render image gallery', () => {
     const images = ['./images/girl1.jpg','./images/girl2'];

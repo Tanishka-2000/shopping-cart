@@ -76,5 +76,15 @@
 }
 .cart-number{
     font-size: 1.5rem;
-    color: #603601;
+    color: #ccc;
 }
+
+.totalAmount{
+    background-color: #603601;
+    color: #eee;
+    font-size: 2rem;
+    text-align: end;
+    padding: 10px 50px;
+    margin: 10px 0;
+}
+

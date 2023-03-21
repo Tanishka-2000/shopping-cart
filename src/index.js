@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import Root from './components/root';
-import Home from './components/Home';
-import Shopping from './components/Shopping';
+import Home from './components/home/Home';
+import Shopping from './components/shopping/Shopping';
 import Cart from './components/Cart';
 
 const router = createBrowserRouter([
   {
-    path: '/shopping-cart',
+    path: '/',
     element: <Root />,
     children: [
       {

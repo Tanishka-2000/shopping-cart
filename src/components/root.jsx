@@ -1,20 +1,37 @@
-import { useState } from "react";
+import { useState , createContext} from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
- export default function Root(){
-  const [cart, setCart] = useState([]);
+export const CartContext = createContext();
 
-  const addToCart = (item) => setCart([...cart, item]);
+export default function Root(){
+const [cart, setCart] = useState([]);
 
-  const removeFromCart = (id) => setCart([...cart, ...cart.filter(product => product.item.id !== id)])
+const addToCart = (item) => {
+  let alreadyInCart = cart.some(product => product.item.id === item.item.id);
+  
+  //if same product present in cart then update its quantity 
+  if(alreadyInCart){
+    setCart(cart.map(product => {
+      if(product.item.id === item.item.id)return {...product, quantity: item.quantity}
+      else return product;
+    }));
+    return;
+  }
+  // otherwise add item to cart
+  setCart([...cart, item]);
+}
 
-  return(
-    <>
-      <Navbar/>
-      <Outlet />
-      <Footer />
-    </>
-  )
- }
+const removeFromCart = (id) => setCart(cart.filter(product => product.item.id !== Number(id)))
+
+return(
+  <>
+    <Navbar cartLength={cart.length}/>
+    <CartContext.Provider value={{cart,  addToCart, removeFromCart}}>
+      <Outlet/>
+    </CartContext.Provider>
+    <Footer />
+  </>
+)
+}

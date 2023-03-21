@@ -1,7 +1,7 @@
 import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
-import Product from './components/Product';
+import Product from '../components/Product';
 
 describe('render Product Component', () => {
     const productData = {

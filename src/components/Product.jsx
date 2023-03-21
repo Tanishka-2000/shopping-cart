@@ -1,13 +1,20 @@
 import {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function Product(props){
+function Product({info, addToCart}){
     const [value, setValue] = useState(1);
-    const add = () => props.addToCart({item: props.info, quantity: value});
-    const updateValue = (e) => {
-        let num = e.target.value;
-        if(isNaN(num)) return;
-        setValue(num);
+
+    const navigate = useNavigate();
+    // add product to cart
+    const add = () => {
+        addToCart({item: info, quantity: value});
+        navigate('/cart')
     }
+
+    // setting quantity of product directly
+    const updateValue = (e) => setValue(e.target.value);
+
+    // increment or decrement handler
     const increment = () => setValue(value => value + 1);
     const decrement = () => {
         if(value === 1) return;
@@ -15,14 +22,14 @@ function Product(props){
     }
 
     return(
-        <div key={props.info.id} className="product">
+        <div key={info.id} className="product">
 
             <div className='image'>
-                <img src={props.info.image} alt="product" />
+                <img src={info.image} alt="product" />
             </div>
 
-            <p className='product-name'>{props.info.name}</p>
-            <p>Price: ${props.info.price}</p>
+            <p className='product-name'>{info.name}</p>
+            <p>Price: ${info.price}</p>
             <label htmlFor='quantity'>Quantity: </label>
             <input id='quantity' type='number' value={value} onChange={updateValue}/>
 
