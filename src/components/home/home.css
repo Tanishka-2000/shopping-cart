@@ -77,9 +77,14 @@
 }
 .costume-images{
     display: flex;
+    gap:2px
 }
-.costume-images>img{
-    width: 600px;
+.costume-images > div{
+    flex: 1;
+}
+
+.costume-images img{
+    width: 100%;
     margin: 0 auto;
 }
 .coloured{

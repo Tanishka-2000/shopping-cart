@@ -1,5 +1,5 @@
-import Gallery from '../Gallery';
-import Display from '../Display';
+import Gallery from './Gallery';
+import Display from './Display';
 import data from '../data';
 import './home.css';
 function Home(){
